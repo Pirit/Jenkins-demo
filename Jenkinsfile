@@ -8,7 +8,7 @@ pipeline {
         stages {
             stage('Build') {
                 steps {
-                    sh 'printenv'
+                    input("go ahead?")
                 }
             }
         }
